@@ -1,5 +1,5 @@
 module.exports = {
-  title: "uu-UI",
+  title: "uu-uui",
   base: '/uui/',
   themeConfig: {
     nav: [{
