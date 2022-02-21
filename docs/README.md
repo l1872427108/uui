@@ -1,9 +1,9 @@
-# 快速开始
+# 安装
 
-#### 安装组建库
+#### npm 安装
 
 ```bash
-npm i uu-uui
+npm i uu-uui --save
 ```
 
 #### 引用组建库
