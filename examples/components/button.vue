@@ -18,11 +18,11 @@
 		<uu-button type="info" round>按钮</uu-button>
 		<uu-button type="danger" round>按钮</uu-button>
 		<div>-----------------------------------</div>
-		<uu-button type="default" circle>圆</uu-button>
-		<uu-button type="primary" circle>圆</uu-button>
-		<uu-button type="success" circle>圆</uu-button>
-		<uu-button type="info" circle>圆</uu-button>
-		<uu-button type="danger" circle>圆</uu-button>
+		<uu-button type="default" circle class="uui-icon-edit"></uu-button>
+		<uu-button type="primary" circle class="uui-icon-check"></uu-button>
+		<uu-button type="success" circle class="uui-icon-warning-circle"></uu-button>
+		<uu-button type="info" circle class="uui-icon-search"></uu-button>
+		<uu-button type="danger" circle class="uui-icon-delete"></uu-button>
 		<div>-----------------------------------</div>
 		<uu-button type="default" disabled>按钮</uu-button>
 		<uu-button type="primary" disabled>按钮</uu-button>

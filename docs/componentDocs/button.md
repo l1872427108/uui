@@ -5,9 +5,10 @@
 <uu-button type="default" plain round disabled />
 ```
 
-### 基础用法
-##### 基础的按钮用法
-##### 
+## 基础用法
+#### 基础的按钮用法
+###
+###
 <uu-button type="default">默认按钮</uu-button>
 <uu-button type="primary">主要按钮</uu-button>
 <uu-button type="success">成功按钮</uu-button>
@@ -15,6 +16,8 @@
 <uu-button type="warn">警告按钮</uu-button>
 <uu-button type="danger">危险按钮</uu-button>
 
+#### 朴素的按钮用法
+###
 ###
 <uu-button type="default" plain>朴素按钮</uu-button>
 <uu-button type="primary" plain>主要按钮</uu-button>
@@ -23,6 +26,8 @@
 <uu-button type="warn" plain>警告按钮</uu-button>
 <uu-button type="danger" plain>危险按钮</uu-button>
 
+#### 圆角的按钮用法
+###
 ###
 <uu-button type="default" round>圆角按钮</uu-button>
 <uu-button type="primary" round>主要按钮</uu-button>
@@ -31,9 +36,19 @@
 <uu-button type="warn" round>警告按钮</uu-button>
 <uu-button type="danger" round>危险按钮</uu-button>
 
+#### 图标的按钮用法
+###
+<uu-button type="default" circle class="uui-icon-edit"></uu-button>
+<uu-button type="primary" circle class="uui-icon-check"></uu-button>
+<uu-button type="success" circle class="uui-icon-delete"></uu-button>
+<uu-button type="info" circle class="uui-icon-remove"></uu-button>
+<uu-button type="warn" circle class="uui-icon-setting"></uu-button>
+<uu-button type="danger" circle class="uui-icon-success"></uu-button>
 
 
-### 禁用按钮
+
+#### 禁用的按钮用法
+###
 ###
 
 <uu-button type="default" disabled>圆角按钮</uu-button>
