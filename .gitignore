@@ -2,7 +2,7 @@
 /node_modules/
 /docs/
 /dist/
-
+docs/.vuepress/dist
 
 
 # local env files
