@@ -1,9 +1,17 @@
 <template>
 	<a
 		class="uu-link"
-		:class="[`uu-link--${type}`, underline ? 'uu-link--underline' : '',disabled ? 'uu-link--disabled':'',icon]"
+		:class="[
+			`uu-link--${type}`,
+			underline ? 'uu-link--underline' : '',
+			disabled ? 'uu-link--disabled' : '',
+		]"
+		:href="href"
 	>
-		<slot />
+		<i v-if="icon" :class="icon"></i>
+		<span v-if="$slots.default">
+			<slot />
+		</span>
 	</a>
 </template>
 
@@ -13,7 +21,7 @@ export default {
 
 	props: {
 		type: {
-			type: "String",
+			type: String,
 			default: "default",
 			validator: function (value) {
 				return (
@@ -36,10 +44,14 @@ export default {
 			type: Boolean,
 			default: false,
 		},
-		icon:{
-			type:String,
-			default:''
-		}
+		icon: {
+			type: String,
+			default: "",
+		},
+		href: {
+			type: String,
+			default: "",
+		},
 	},
 	data() {
 		return {};
@@ -52,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$normal-color: #fff;
+$normal-color: #000;
 $normal-active-color: #409eff;
 $primary-color: #409eff;
 $primary-active-color: #66b1ff;
@@ -68,6 +80,7 @@ $danger-active-color: #f78989;
 .uu-link {
 	display: inline-block;
 	margin: 0 5px;
+	text-decoration: none;
 
 	&:hover {
 		cursor: pointer;
@@ -80,20 +93,36 @@ $danger-active-color: #f78989;
 	}
 }
 .uu-link--disabled {
-//   pointer-events: none;
-  filter: alpha(opacity=50); /*IE滤镜，透明度50%*/
-  -moz-opacity: 0.5; /*Firefox私有，透明度50%*/
-  opacity: 0.5; /*其他，透明度50%*/
-  &:hover{
-	  text-decoration: none;
-	  cursor: not-allowed;
-  }
- 
+	//   pointer-events: none;
+	filter: alpha(opacity=50); /*IE滤镜，透明度50%*/
+	-moz-opacity: 0.5; /*Firefox私有，透明度50%*/
+	opacity: 0.5; /*其他，透明度50%*/
+	&:hover {
+		text-decoration: none;
+		cursor: not-allowed;
+	}
+}
+
+.uu-link [class*="uui-icon"] + span {
+	margin-left: 5px;
+}
+
+.uu-link--default {
+	color: $normal-color;
+	&:hover {
+		color: $normal-active-color;
+	}
+	&.uu-link--disabled {
+		color: $normal-color;
+	}
 }
 
 .uu-link--success {
 	color: $success-color;
 	&:hover {
+		color: $success-active-color;
+	}
+	&.uu-link--disabled {
 		color: $success-active-color;
 	}
 }
@@ -102,10 +131,16 @@ $danger-active-color: #f78989;
 	&:hover {
 		color: $primary-active-color;
 	}
+	&.uu-link--disabled {
+		color: $primary-active-color;
+	}
 }
 .uu-link--danger {
 	color: $danger-color;
 	&:hover {
+		color: $danger-active-color;
+	}
+	&.uu-link--disabled {
 		color: $danger-active-color;
 	}
 }
@@ -114,10 +149,16 @@ $danger-active-color: #f78989;
 	&:hover {
 		color: $warning-active-color;
 	}
+	&.uu-link--disabled {
+		color: $warning-active-color;
+	}
 }
 .uu-link--info {
 	color: $info-color;
 	&:hover {
+		color: $info-active-color;
+	}
+	&.uu-link--disabled {
 		color: $info-active-color;
 	}
 }
