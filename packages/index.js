@@ -1,6 +1,6 @@
 // 入口
 import uuButton from './uu-button';
-
+import './font/iconfont.css';
 const components = [
 	uuButton
 ]

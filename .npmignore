@@ -1,6 +1,9 @@
 examples/
 packages/
 public/
+docs/
+/eslintrc.js
+.editorconfig
 
 vue.config.js
 babel.config.js

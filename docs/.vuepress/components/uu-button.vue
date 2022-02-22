@@ -3,27 +3,25 @@
     class="uu-button"
     :class="[
       `uu-button--${type}`,
-      {
-        'is-plain': plain,
-      },
+      { 'is-plain': plain },
       {
         'is-round': round,
       },
-			{
-				'is-circle': circle
-			},
-			{
-				'is-disabled': disabled
-			}
+      {
+        'is-circle': circle,
+      },
+      {
+        'is-disabled': disabled,
+      },
     ]"
-		:disabled="disabled"
+    :disabled="disabled"
 		@click="handleClick"
   >
-		<div class="mask" v-if="disabled"></div>
-		<i v-if="icon" :class="icon"></i>
+    <div class="mask" v-if="disabled"></div>
+    <i v-if="icon" :class="icon"></i>
     <span v-if="$slots.default">
-			<slot></slot>
-		</span>
+      <slot></slot>
+    </span>
   </button>
 </template>
 
@@ -34,18 +32,18 @@ export default {
     type: {
       type: "String",
       default: "default",
-			validator: function(value) {
+      validator: function (value) {
         return (
           [
-            'default',
-            'success',
-            'primary',
-            'danger',
-            'warning',
-            'info'
+            "default",
+            "success",
+            "primary",
+            "danger",
+            "warning",
+            "info",
           ].indexOf(value) !== -1
-        )
-      }
+        );
+      },
     },
     plain: {
       type: Boolean,
@@ -55,24 +53,25 @@ export default {
       type: Boolean,
       default: false,
     },
-		circle: {
-			type: Boolean,
-			default: false
-		},
-		icon: {
-			type: String,
-			default: ''
-		},
-		disabled: {
-			type: Boolean,
-			default: false
-		}
+    circle: {
+      type: Boolean,
+      default: false,
+    },
+    icon: {
+      type: String,
+      default: "",
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
-	methods: {
-		handleClick(e) {
-			this.$emit('click', e);
-		}
-	}
+
+  methods: {
+  	handleClick(e) {
+  		this.$emit('click', e);
+  	}
+  }
 };
 </script>
 
@@ -93,7 +92,7 @@ $danger-active-color: #f78989;
 .uu-button {
   display: inline-block;
   position: relative;
-  font-family: 'PingFang SC', 'Microsoft Yahei', sans-serif;
+  font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
   line-height: 1;
   cursor: pointer;
   background-color: $normal-color;
@@ -269,7 +268,7 @@ $danger-active-color: #f78989;
   padding: 12px;
 }
 // 让图标和文字之间空开
-.uu-button [class*='uu-icon'] + span {
+.uu-button [class*="uu-icon"] + span {
   margin-left: 5px;
 }
 // 禁用

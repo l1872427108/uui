@@ -1,6 +1,6 @@
 module.exports = {
-  title: "uu-UI",
-  base: '/uui/',
+  title: "uu-uui",
+  base: '/uu-uui/',
   themeConfig: {
     nav: [{
       text: 'Home', link: '/'
@@ -11,6 +11,7 @@ module.exports = {
     }],
     sidebar: [
       '/',
+			'/componentDocs/icon',
 			'/componentDocs/button'
     ]
   }

@@ -15,6 +15,7 @@
       },
     ]"
     :disabled="disabled"
+		@click="handleClick"
   >
     <div class="mask" v-if="disabled"></div>
     <i v-if="icon" :class="icon"></i>
@@ -66,11 +67,11 @@ export default {
     },
   },
 
-  // methods: {
-  // 	handleClick(e) {
-  // 		this.$emit('click', e);
-  // 	}
-  // }
+  methods: {
+  	handleClick(e) {
+  		this.$emit('click', e);
+  	}
+  }
 };
 </script>
 

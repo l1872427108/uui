@@ -1,13 +1,11 @@
-# 快速开始
-
-#### 安装组建库
-
-```bash
-npm i uu-uui
+# 安装
+### npm 安装
+```base
+npm i uu-uui --save
 ```
 
-#### 引用组建库
-> 在 main.js 中引用组建库
+### 引用组建库
+在 main.js 中引用组建库
 
 ```javascript
 // 全部引入
@@ -19,5 +17,4 @@ Vue.use(uUI);
 import 'uu-uui/dist/uuButton.css';
 import { uuButton } from 'uu-uui';
 Vue.use(uuButton);
-
 ```
