@@ -1,8 +1,6 @@
 <template>
   <div id="app">
 		<!-- <uuButton></uuButton> -->
-		
-		<!-- <uu-switch @change="handle" v-model="active"></uu-switch> -->
 		<uu-switch></uu-switch>
   </div>
 </template>

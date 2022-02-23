@@ -10,11 +10,11 @@
 <uu-switch v-model="value" active-color="#13ce66" inactive-color="#ff4949" />
 ### 
 ```vue
-<el-switch
+<uu-switch
   v-model="value"
   active-color="#13ce66"
   inactive-color="#ff4949">
-</el-switch>
+</uu-switch>
 
 <script>
   export default {
@@ -39,19 +39,19 @@
 ###
 
 ```vue
-<el-switch
+<uu-switch
   v-model="value1"
   active-text="按月付费"
   inactive-text="按年付费">
-</el-switch>
-<el-switch
+</uu-switch>
+<uu-switch
   style="display: block"
   v-model="value2"
   active-color="#13ce66"
   inactive-color="#ff4949"
   active-text="按月付费"
   inactive-text="按年付费">
-</el-switch>
+</uu-switch>
 
 <script>
   export default {
