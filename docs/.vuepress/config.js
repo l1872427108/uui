@@ -12,7 +12,8 @@ module.exports = {
     sidebar: [
       '/',
 			'/componentDocs/icon',
-			'/componentDocs/button'
+			'/componentDocs/button',
+			'/componentDocs/switch'
     ]
   }
 }
