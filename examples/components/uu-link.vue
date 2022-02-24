@@ -17,7 +17,7 @@
 
 <script>
 export default {
-	name: "UuUuiUuLink",
+	name: "uuLink",
 
 	props: {
 		type: {
@@ -79,7 +79,6 @@ $danger-active-color: #f78989;
 
 .uu-link {
 	display: inline-block;
-	margin: 0 5px;
 	text-decoration: none;
 
 	&:hover {

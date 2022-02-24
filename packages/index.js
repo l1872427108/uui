@@ -1,10 +1,12 @@
 // 入口
 import uuButton from './uu-button.vue';
 import uuSwitch from './uu-switch.vue';
+import uuLink from './uu-link.vue';
 import './font/iconfont.css';
 const components = [
 	uuButton,
-	uuSwitch
+	uuSwitch,
+	uuLink
 ]
 
 const install = function (Vue) {
