@@ -2,11 +2,13 @@
 import uuButton from './uu-button.vue';
 import uuSwitch from './uu-switch.vue';
 import uuLink from './uu-link.vue';
+import uuDialog from './uu-dialog.vue';
 import './font/iconfont.css';
 const components = [
 	uuButton,
 	uuSwitch,
-	uuLink
+	uuLink,
+	uuDialog
 ]
 
 const install = function (Vue) {

@@ -14,7 +14,8 @@ module.exports = {
 			'/componentDocs/icon',
 			'/componentDocs/link',
 			'/componentDocs/button',
-			'/componentDocs/switch'
+			'/componentDocs/switch',
+			'/componentDocs/dialog'
     ]
   }
 }

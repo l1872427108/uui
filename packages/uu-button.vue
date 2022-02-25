@@ -32,7 +32,7 @@ export default {
   name: "uuButton",
   props: {
     type: {
-      type: "String",
+      type: String,
       default: "default",
 			validator: function(value) {
         return (
