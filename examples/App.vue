@@ -12,7 +12,7 @@
 // import uuSwitch from './components/switch.vue';
 // import uuLink from './components/link.vue';
 // import uuDialog from './components/uu-dialog.vue';
-// import uuDialog from './components/dialog.vue';
+import uuDialog from './components/dialog.vue';
 export default {
 	name: 'App',
 	components: {
