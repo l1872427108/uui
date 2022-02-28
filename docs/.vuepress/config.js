@@ -15,7 +15,8 @@ module.exports = {
 			'/componentDocs/link',
 			'/componentDocs/button',
 			'/componentDocs/switch',
-			'/componentDocs/dialog'
+			'/componentDocs/dialog',
+			'/componentDocs/radio'
     ]
   }
 }
